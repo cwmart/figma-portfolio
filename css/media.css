@@ -1,0 +1,101 @@
+@media (max-width: 1000px) {
+  .nav-list {
+    display: none;
+  }
+
+  .nav.open .nav-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    font-size: 34px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 46px 30px;
+    background-color: white;
+  }
+
+  .nav-link {
+    color: rgb(130, 130, 130);
+    font-weight: 600;
+  }
+
+  .active {
+    color: black;
+  }
+
+  .nav-button {
+    display: block;
+  }
+
+  .nav.open .nav-button {
+    position: fixed;
+    z-index: 2;
+    top: 46px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  /* header-row */
+
+  .header-row {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin-top: 50px;
+  }
+
+  .header-content {
+    margin-top: 0;
+  }
+
+  .header-heading {
+    font-size: 34px;
+  }
+
+  .header-heading span {
+    font-size: 28px;
+  }
+
+  /* section */
+
+  .services {
+    padding: 60px 0;
+  }
+
+  .services-row {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+  }
+
+/* main */
+
+  .card-row {
+    padding: 60px 0;
+  }
+
+  .portfolio {
+    margin-bottom: 50px;
+  }
+
+  /* footer */
+
+  .contacts {
+    padding: 60px 0;
+  }
+
+  .contact-info {
+    margin: 20px 0;
+  }
+
+  .contacts-list {
+    margin: 70px 20px;
+    column-gap: 50px;
+  }
+}
